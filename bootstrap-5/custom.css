@@ -1,0 +1,72 @@
+main{
+    min-height: 80vh;
+    overflow-x: hidden;
+}
+
+img {
+	width: 100%;
+}
+
+.nav-log{
+    background-color: #fdd055;
+}
+
+.logo {
+	width: 80px;
+}
+
+.bgcolor {
+    background-color: #2c3e50;
+}
+
+.bgbutton {
+    background-color: #3498db;
+}
+
+.fa-minus {
+    color: red;
+}
+
+/* Positions Custom CSS */
+.nav-pills-custom .nav-link1 {
+    color: #aaa;
+    background: #fff;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link1.active {
+    color: #45b649;
+    background: #fff;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link1::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link1.active::before {
+    opacity: 1;
+}
+
+#profile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    overflow-x: hidden;
+}
